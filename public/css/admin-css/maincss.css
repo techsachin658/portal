@@ -1,0 +1,114 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+body {
+    background-color: #f5f5f5;
+}
+.sidebar {
+    background: #263238;
+    box-shadow: none;
+}
+.navbar {
+    box-shadow: none;
+    color: #000;
+}
+.sidebar .nav li .dropdown-menu a,
+.sidebar .nav li a {
+    color: #fff;
+}
+.sidebar .nav li.active > [data-toggle="collapse"],
+.sidebar .nav li .dropdown-menu a:focus,
+.sidebar .nav li .dropdown-menu a:hover,
+.sidebar .nav li:hover > a {
+    color: #fff;
+}
+.sidebar .logo .simple-text {
+    color: #fff;
+}
+.tim-typo {
+    padding-left: 25%;
+    margin-bottom: 40px;
+    position: relative;
+    width: 100%;
+}
+.main-panel > .content {
+    padding: 30px;
+}
+.tim-typo .tim-note {
+    bottom: 5px;
+    color: #c0c1c2;
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    left: 0;
+    margin-left: 20px;
+    position: absolute;
+    width: 260px;
+}
+.main-panel > .footer {
+    border: none;
+    background: #fff;
+    color: #000;
+    padding: 5px;
+}
+
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu a:active,
+.dropdown-menu a:focus,
+.dropdown-menu a:hover {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14),
+        0 7px 10px -5px rgba(38, 50, 56, 0.4);
+    background-color: #263238;
+    color: #fff;
+}
+/* offline-doc */
+
+.offline-doc .navbar.navbar-transparent {
+    padding-top: 25px;
+    border-bottom: none;
+}
+
+.offline-doc .navbar.navbar-transparent .navbar-minimize {
+    display: none;
+}
+
+.offline-doc .navbar.navbar-transparent .navbar-brand,
+.offline-doc .navbar.navbar-transparent .collapse .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.offline-doc .footer {
+    z-index: 3 !important;
+}
+
+.offline-doc .page-header .container {
+    z-index: 3;
+}
+
+.offline-doc .page-header:after {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#map {
+    z-index: 2;
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+}
