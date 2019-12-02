@@ -1,0 +1,10 @@
+html,
+body {
+    background-color: #fff;
+    color: #636b6f;
+    margin: 0;
+}
+
+.heightInPx {
+    height: 50px;
+}

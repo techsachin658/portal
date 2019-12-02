@@ -12,13 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect(route('login'));
 });
 
-Route::get('/dashboard', function(){
-    return view('admin.dashboard');
-})->name('dashboard');
-
-Route::get('/user',function(){
-    return view('admin.user');
-})->name('user');
+Route::get('dashboard', 'AdminController@dashboard')->name('dashboard')->middleware('admin');
+Route::get('user', 'AdminController@user')->name('user')->middleware('admin');
+Route::get('add-user', 'AdminController@adduser')->name('add-user')->middleware('admin');
+Route::get('addNewUser','AdminController@addNewUser')->name('admin.addnewuser');
+Route::post('addNewUser','AdminController@addNewUser')->name('admin.addnewuser');
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');

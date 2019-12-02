@@ -71,6 +71,12 @@ body {
     background-color: #263238;
     color: #fff;
 }
+
+.card-header {
+    background: #000 !important;
+    color: #fff;
+    font-size: 18px;
+}
 /* offline-doc */
 
 .offline-doc .navbar.navbar-transparent {
